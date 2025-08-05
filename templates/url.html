@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortener</title>
+</head>
+<body>
+    <style>
+        /* Base styles (mobile-first) */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            padding: 8vh 4vw;
+            display: grid;
+            justify-items: center;
+            align-content: flex-start;
+            background-color: #3a86ff;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 14px;
+        }
+
+        a {
+            color: #2c0069;
+            word-break: break-word;
+        }
+
+        /* Tablet screens (≥ 600px) */
+        @media (min-width: 600px) {
+            body {
+            padding: 10vh 6vw;
+            font-size: 16px;
+            }
+        }
+
+        /* Desktop screens (≥ 1024px) */
+        @media (min-width: 1024px) {
+            body {
+            padding: 12vh 8vw;
+            font-size: 18px;
+            }
+        }
+
+        /* Large desktop (≥ 1440px) */
+        @media (min-width: 1440px) {
+            body {
+            padding: 15vh 12vw;
+            font-size: 20px;
+            }
+        }
+    </style>
+
+
+    <h1>Short url: <a href="{{short_url}}">{{short_url}}</a></h1>
+</body>
+</html>
